@@ -47,6 +47,10 @@ public class TicTacToe {
         return GameResult.CONTINUE;
     }
 
+    public FieldType getValue(int row, int column) {
+        return board[row][column];
+    }
+
     private GameResult checkWinner() {
         if(checkMark(FieldType.X)) {
             return GameResult.X_WON;
